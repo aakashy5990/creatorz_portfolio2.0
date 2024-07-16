@@ -1,0 +1,115 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Transition</title>
+    <style>
+        body {
+            height: 200vh; /* Make the page tall enough to scroll */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            position: fixed;
+            top: 50px; /* Initial position */
+            transition: transform 0.1s; /* Smooth transition */
+        }
+    </style>
+</head>
+<body>
+    <h1>Scroll to Move Me</h1>
+    <script>
+        document.addEventListener('scroll', () => {
+            const h1 = document.querySelector('h1');
+            const scrollPosition = window.scrollY;
+            console.log(scrollPosition)
+            h1.style.transform = `translateY(${scrollPosition * -0.5}px)`; // Adjust the multiplier to control the speed
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Transition</title>
+    <style>
+        body {
+            height: 300vh; /* Make the page tall enough to scroll */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            position: fixed;
+            top: 50px; /* Initial position */
+            transition: transform 0.1s; /* Smooth transition */
+        }
+        h1:nth-child(2) {
+            top: 150px; /* Position for the second h1 */
+        }
+        h1:nth-child(3) {
+            top: 250px; /* Position for the third h1 */
+        }
+    </style>
+</head>
+<body>
+    <h1>Scroll to Move Me 1</h1>
+    <h1>Scroll to Move Me 2</h1>
+    <h1>Scroll to Move Me 3</h1>
+    <script>
+        document.addEventListener('scroll', () => {
+            const h1Elements = document.querySelectorAll('h1');
+            const scrollPosition = window.scrollY;
+            h1Elements.forEach((h1, index) => {
+                const speed = (index + 1) * -0.3;
+                h1.style.transform = `translateY(${scrollPosition * speed}px)`;
+            });
+        });
+    </script>
+</body>
+</html>

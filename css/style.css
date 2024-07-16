@@ -594,7 +594,7 @@ body {
 
   50% {
     transform: rotate(-360deg);
-    border-radius: 50%;
+    /* border-radius: 50%; */
   }
 
   100% {
@@ -607,6 +607,7 @@ body {
 
 .service_btn{
   width: 100%;
+  /* color: var(--text-w-color); */
   --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
   --border-width: 0.125em;
   --curve-size: 0.5em;
@@ -614,7 +615,7 @@ body {
   word-spacing:3px;
   text-align: center;
   --bg: #080312;
-  --color: #afffff;
+  --color: #fff;
   color: var(--color);
   cursor: pointer;
   /* use position: relative; so that BG is only for .btn */

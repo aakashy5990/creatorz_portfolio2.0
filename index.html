@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>creatorz_vision</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
     <style>
         video {
             width: 100px;
@@ -137,6 +138,121 @@
     <!-- ******************Service page Completed ******************** -->
 
 
+    <!-- *********start slider section****************  -->
+    
+    <!-- <div class="slider_section">
+        <div class="slider_container">
+            <div class="slider_first_container">
+                
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="middle_txt_slider">
+                <h2>
+                    <marquee behavior="scroll" direction="left" scrollamount="16">
+                        Quality is worth the time 
+                    </marquee>
+                </h2>
+            </div>
+            <div class="slider_second_container">
+
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="clent-slider_main_container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- wiper container -->
+                <div class="swiper-slide">
+                    <div class="swiper_slider_main_container">
+                        <div class="swiper_slider_text">
+                            <div class="swiper_slider_text_container">
+                                <p>"Nailed it! Their designs were spot-on and make our brand look amazing. Totally recommend them!"</p>
+                                <div class="swiper-slider_client_container">
+                                    <div class="swiper_client_img">
+                                        <img src="img/client-1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper_client_name">
+                                        <p>Valerie Grimpson</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_slider_main_container">
+                        <div class="swiper_slider_text">
+                            <div class="swiper_slider_text_container">
+                                <p>"Nailed it! Their designs were spot-on and make our brand look amazing. Totally recommend them!"</p>
+                                <div class="swiper-slider_client_container">
+                                    <div class="swiper_client_img">
+                                        <img src="img/client-2.jpg" alt="">
+                                    </div>
+                                    <div class="swiper_client_name">
+                                        <p>Valerie Grimpson</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+
+
+    <!-- *********end slider section****************  -->
+
+
+
+    <script src="js/swiper-bundle.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
 </body>
 </html>

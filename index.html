@@ -253,6 +253,28 @@
             prevEl: ".swiper-button-prev",
           },
         });
+
+
+        let isScrolling;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', function() {
+            // Clear our timeout throughout the scroll
+            window.clearTimeout(isScrolling);
+
+            // Hide the header
+            header.style.visibility = 'hidden';
+            header.style.opacity = '0';
+
+            // Set a timeout to run after scrolling ends
+            isScrolling = setTimeout(function() {
+                // Show the header
+                header.style.visibility = 'visible';
+                header.style.opacity = '1';
+            }, 300); // Adjust the timeout value as needed
+        }, false);
+
+        
       </script>
 
 </body>

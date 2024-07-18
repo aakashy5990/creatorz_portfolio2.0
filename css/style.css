@@ -71,6 +71,12 @@ body {
   height: 100%;
 }
 
+header{
+  visibility: visible;
+  transition: visibility 0.3s, opacity 0.3s, top 0.3s;
+  opacity: 1;
+}
+
 .intro_section {
   min-height: 100vh;
   background: url('../img/main_banenr.png') no-repeat;
@@ -137,7 +143,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 17px 100px;
+  padding: 14px 100px;
   background: rgba(255, 255, 255, .0125);
   display: flex;
   justify-content: space-between;
@@ -809,7 +815,7 @@ body {
 
 .slider {
   /* background: white; */
-  /* height: 250px; */
+  height: 250px;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -854,8 +860,8 @@ body {
 .slide {
   /* height: 250px; */
   /* width: 250px; */
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
 /* 
@@ -972,6 +978,7 @@ body {
   width: 100%;
   height: 50vh;
   background-color: red;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .swiper-slider_client_container{

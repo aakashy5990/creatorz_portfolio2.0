@@ -1,63 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/swiper-bundle.css">
     <style>
-        .img{
-            width: 100%;
-        }
-        .swiper-slide{
-            width: 500px;
-            height: 500px;
-            background-color: red;
-        }
-    </style>
-</head>
-<body>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper_slider_text">
-                <p>"Nailed it! Their designs were spot-on and make our brand look amazing. Totally recommend them!"</p>
-                <div class="swiper-slider_client_container">
-                    <div class="swiper_client_img">
-                        <img src="img/" alt="">
-                    </div>
-                    <div class="swiper_client_name">
-                        <p>Valerie Grimpson</p>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
+      body {
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
 
-      
-      <script src="js/swiper-bundle.js"></script>
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          loop: true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
-</body>
+      .slider {
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 400px;
+        transition: width 0.5s ease, height 0.5s ease;
+      }
+
+      .slider::after {
+        right: 0;
+        top: 0;
+        -webkit-transform: rotateZ(180deg);
+        transform: rotateZ(180deg);
+      }
+
+      .slider::before {
+        left: 0;
+        top: 0;
+      }
+
+      .slider .slide-track {
+        animation: scroll 80s linear infinite;
+        display: flex;
+        width: calc(300px * 18);
+      }
+
+      .slider .slide-track:hover {
+        animation-play-state: paused;
+      }
+
+      .slide {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        margin: 1rem;
+        transition: width 0.5s ease, height 0.5s ease;
+      }
+
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-300px * 9));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+      </div>
+    </div>
+  </body>
 </html>

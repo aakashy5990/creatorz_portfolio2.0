@@ -68,13 +68,13 @@
 }
 
 /* ************cursor ********** */
-.cursor-dot{
+.cursor-dot {
   width: 5px;
   height: 5px;
   background-color: white;
 }
 
-.cursor-outline{
+.cursor-outline {
   width: 30px;
   height: 30px;
   border: 2px solid hsla(0, 0%, 100%, .5);
@@ -82,11 +82,11 @@
 }
 
 .cursor-dot,
-.cursor-outline{
+.cursor-outline {
   position: fixed;
   top: 0;
   left: 0;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   z-index: 99999999999;
   pointer-events: none;
@@ -847,30 +847,112 @@ header {
 
 /* *************** slider section code ************* */
 
-.slider_section {
-  width: 100%;
-  height: 100vh;
+/* ***********Start middle text & box slider ********** */
+
+.box_text_slider_main{
   background-color: var(--text-b-color);
 }
 
-.slider_container {
+.first_slider,
+.second_slider,
+.third_slider {
   width: 100%;
+}
+
+.slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.slider .slide-track {
+  animation: scroll 80s linear infinite reverse;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: calc(350px * 18);
+  /* Adjust this based on the number of slides */
 }
 
-
-.middle_txt_slider {
-  width: 100%;
+.slider .slide-track:hover {
+  animation-play-state: paused;
 }
 
-.middle_txt_slider h2 {
+.slider .second-slide-track {
+  animation: scroll 80s linear infinite;
+  display: flex;
+  width: calc(350px * 18);
+  /* Adjust this based on the number of slides */
+}
+
+.slider .second-slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slide {
+  width: 350px;
+  height: 210px;
+  background-color: white;
+  margin: 1rem;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-350px * 9));
+    /* Adjust this based on the number of slides */
+  }
+}
+
+.marquee-w {
+  position: relative;
+  display: block;
+  height: 140px;
+  overflow: hidden;
+}
+
+.marquee {
+  position: absolute;
+  display: block;
+  margin: auto auto;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  text-align: center;
   color: rgb(204 42 249);
+  font-family: 'Clash Display', sans-serif;
+  font-weight: var(--font-weight-semibold);
+  white-space: nowrap;
+  line-height: 140px;
   font-size: 8rem;
-  text-transform: uppercase;
+  animation: marquee 20s linear infinite;
 }
+
+.marquee2 span {
+  animation-delay: 10s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/* ***********ENd middle text & boxslider ********** */
+
 
 /* ************* client slider code start **********  */
 
@@ -1104,21 +1186,21 @@ header {
   justify-content: center;
   align-items: start;
   padding-left: 100px;
-  
+
 }
 
-.new_section_container p{
+.new_section_container p {
   color: var(--text-w-color);
   font-family: 'Clash Display', sans-serif;
-} 
+}
 
-.new_section_container p:nth-child(1){
+.new_section_container p:nth-child(1) {
   font-size: 4.5rem;
   font-weight: var(--font-weight-semibold);
   word-spacing: 2px;
 }
 
-.new_section_container p:nth-child(2){
+.new_section_container p:nth-child(2) {
   font-size: 1.4rem;
   font-family: 'Clash Display', sans-serif;
   font-weight: var(--font-weight-light);
@@ -1126,7 +1208,7 @@ header {
   letter-spacing: 1px;
 }
 
-.new_section_main_container{
+.new_section_main_container {
   max-width: 650px;
   display: grid;
   row-gap: 1rem;

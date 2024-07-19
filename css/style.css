@@ -999,9 +999,9 @@ header {
 }
 
 /* Custom styles for the active bullet */
-.swiper-pagination-bullet-active {
-  /* background-color: #fff !important; Change the active bullet color */
-}
+/* .swiper-pagination-bullet-active {
+  background-color: #fff !important; Change the active bullet color
+} */
 
 /* End Custom style for the pagination bullets */
 

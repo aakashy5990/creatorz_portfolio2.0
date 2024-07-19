@@ -140,49 +140,22 @@
 
     <!-- *********start slider section****************  -->
     
-    <div class="slider_section">
+    <!-- <div class="slider_section">
         <div class="slider_container">
-            <div class="slider_first_container">
-                
-                <div class="slider">
-                    <div class="slide-track">
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                    </div>
-                </div>
-
-            </div>
+            
             <div class="middle_txt_slider">
-                <h2>
-                    <marquee behavior="scroll" direction="left" scrollamount="16">
-                        Quality is worth the time 
-                    </marquee>
-                </h2>
+                <marquee behavior="scroll" direction="left" scrollamount="16">
+                    <h2> Quality is worth the time </h2>
+                </marquee>
             </div>
-            <div class="slider_second_container">
 
-                
-            </div>
         </div>
-    </div>
+    </div> -->
+
+    <!-- *********end slider section****************  -->
 
 
+    <!-- ******************start clients slider section************** -->
     <div class="clent-slider_main_container">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -191,10 +164,10 @@
                     <div class="swiper_slider_main_container">
                         <div class="swiper_slider_text">
                             <div class="swiper_slider_text_container">
-                                <p>"Nailed it! Their designs were spot-on and make our brand look amazing. Totally recommend them!"</p>
+                                <p class="client_header">"Nailed it! Their designs were spot-on and make our <span> brand look amazing.</span> <br> <span>Totally recommend them! "</span></p>
                                 <div class="swiper-slider_client_container">
                                     <div class="swiper_client_img">
-                                        <img src="img/client-1.jpg" alt="">
+                                        <img src="img/client-2.jpg" alt="">
                                     </div>
                                     <div class="swiper_client_name">
                                         <p>Valerie Grimpson</p>
@@ -204,11 +177,12 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="swiper-slide">
                     <div class="swiper_slider_main_container">
                         <div class="swiper_slider_text">
                             <div class="swiper_slider_text_container">
-                                <p>"Nailed it! Their designs were spot-on and make our brand look amazing. Totally recommend them!"</p>
+                                <p class="client_header">"Nailed it! Their designs were spot-on and make our <span> brand look amazing.</span> <br> <span>Totally recommend them! "</span></p>
                                 <div class="swiper-slider_client_container">
                                     <div class="swiper_client_img">
                                         <img src="img/client-2.jpg" alt="">
@@ -222,14 +196,39 @@
                     </div>
                 </div>
             </div>
+
             <!-- <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div> -->
             <div class="swiper-pagination"></div>
-          </div>
+            
+        </div>
     </div>
 
+    <!-- **********************end clients slider section**************** -->
 
-    <!-- *********end slider section****************  -->
+    <!-- ****************** start news section****************** -->
+
+    <div class="news_section">
+        <div class="new_section_container">
+            <div class="new_section_main_container">
+                <p>Spread the News</p>
+                <p>Find out more about our work on these <br> loading design and technology plateforms</p>
+                <div class="news_button_main_container">
+                    <div class="news_button_container">
+                        <div class="news_btn_container">
+                            <button class="news_btn_button">Let’s talk</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ******************End news section****************** -->
+
+
+
+
 
 
 
@@ -252,6 +251,7 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
+          speed:3000,
         });
 
 
@@ -259,22 +259,21 @@
         const header = document.querySelector('.header');
 
         window.addEventListener('scroll', function() {
-            // Clear our timeout throughout the scroll
+
             window.clearTimeout(isScrolling);
 
-            // Hide the header
             header.style.visibility = 'hidden';
             header.style.opacity = '0';
 
-            // Set a timeout to run after scrolling ends
             isScrolling = setTimeout(function() {
-                // Show the header
+
                 header.style.visibility = 'visible';
                 header.style.opacity = '1';
-            }, 300); // Adjust the timeout value as needed
+            }, 1000);
         }, false);
 
-        
+
+
       </script>
 
 </body>

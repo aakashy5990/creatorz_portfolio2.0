@@ -67,8 +67,34 @@
   /* font-family: 'Clash Display', sans-serif; */
 }
 
+/* ************cursor ********** */
+.cursor-dot{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
+
+.cursor-outline{
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0, 0%, 100%, .5);
+}
+
+.cursor-dot,
+.cursor-outline{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  z-index: 99999999999;
+  pointer-events: none;
+}
+
+
 body {
   height: 100%;
+  cursor: none;
 }
 
 header {

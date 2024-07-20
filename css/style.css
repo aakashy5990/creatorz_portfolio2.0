@@ -172,7 +172,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 14px 100px;
+  padding: 5px 100px;
   background: rgba(255, 255, 255, .0125);
   display: flex;
   justify-content: space-between;
@@ -868,7 +868,7 @@ header {
 }
 
 .slider .slide-track {
-  animation: scroll 80s linear infinite reverse;
+  animation: scroll 8s linear infinite reverse;
   display: flex;
   width: calc(350px * 18);
   /* Adjust this based on the number of slides */

@@ -20,3 +20,11 @@ font-family: 'Clash Display', sans-serif;
 
   --font-size-large: 1.4em;
   --padding-standard: 0.6em 0.8em;
+
+
+<!-- insta color  -->
+
+background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+
+
+background: linear-gradient(to right, #bc1888, #cc2366, #dc2743, #e6683c, #f09433);

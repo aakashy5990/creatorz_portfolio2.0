@@ -1284,3 +1284,356 @@ header {
 
 
 /* <!-- ******************logo slider section ENd ******************* --> */
+
+
+/* <!-- ********************footer section start******************** --> */
+
+
+.footer_btn_button {
+  cursor: pointer;
+  padding: 1em 1.8em;
+  border: 3px solid #414141;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  background-color: #222222;
+  transition: transform 0.3s ease;
+}
+
+.footer_btn_button:hover {
+  transform: scale(1.15);
+  border: none;
+  background: linear-gradient(
+    -80deg,
+    rgba(150, 93, 233, 1) 10%,
+    rgba(99, 88, 238, 1) 95%
+  );
+}
+
+.footer_btn_button:active {
+  transform: scale(0.95);
+}
+
+footer{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-b-color);
+}
+
+.footer_section{
+  width: 100%;
+}
+
+.footer_main_section{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer_main_section p{
+  color: var(--text-w-color);
+  font-size: 2.5rem;
+  margin-top: 10rem;
+  text-align: center;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: var(--font-weight-medium);
+}
+
+.footer_main_section span{
+  color: var(--secondary-color);
+}
+
+.footer_button_section{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.footer_logo_email{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.footer_logo_email .footer_logo{
+  width: 200px;
+  height: 200px;
+}
+
+.footer_logo_email .footer_logo img{
+  width: 100%;
+}
+
+.footer_email{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer_logo_email .footer_email p{
+  color: var(--text-w-color);
+  font-family: 'Clash Display', sans-serif;
+
+}
+
+.footer_logo_email .footer_email p:first-child{
+  letter-spacing: 1px;
+}
+
+.footer_logo_email .footer_email p:last-child{
+  letter-spacing: 1px;
+}
+
+.footer_social_main_icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  margin-top: 5rem;
+}
+
+/* instagram icon  */
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.insta_icon_button{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  background-color: #a21caf;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.insta_icon_button:hover{
+  transform: translateY(3px);
+  border-radius: 50%;
+  background: linear-gradient(to right, #bc1888, #cc2366, #dc2743, #e6683c, #f09433);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.5rem;
+  fill: currentColor;
+}
+
+.label {
+  position: absolute;
+  opacity: 0;
+  color: #ffffff;
+  transition: all 0.7s;
+}
+
+.insta_icon_button:hover .label {
+  opacity: 1;
+  color: #aaaaaa;
+  transform: translateY(-2.9rem);
+}
+
+/* youtube icon css  */
+
+.yt_icon_button{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #ff0000, #c4302b);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.yt_icon_button:hover {
+  transform: translateY(3px);
+  border-radius: 50%;
+  background: linear-gradient(to right, #c4302b, #ff0000);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.5rem;
+  fill: currentColor;
+}
+
+.label {
+  position: absolute;
+  opacity: 0;
+  color: #ffffff;
+  transition: all 0.7s;
+}
+
+.yt_icon_button:hover .label {
+  opacity: 1;
+  color: #aaaaaa;
+  transform: translateY(-2.9rem);
+}
+
+/* linkdin icon css  */
+.linkdin_icon_button{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #0077b5, #005582);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.linkdin_icon_button:hover {
+  transform: translateY(3px);
+  border-radius: 50%;
+  background: linear-gradient(to right, #005582, #0077b5);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.5rem;
+  fill: currentColor;
+}
+
+.label {
+  position: absolute;
+  opacity: 0;
+  color: #ffffff;
+  transition: all 0.7s;
+}
+
+.linkdin_icon_button:hover .label {
+  opacity: 1;
+  color: #aaaaaa;
+  transform: translateY(-2.9rem);
+}
+
+/* facebook icon css  */
+.fb_icon_button{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #1877f2, #3b5998);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.fb_icon_button:hover {
+  transform: translateY(3px);
+  border-radius: 50%;
+  background: linear-gradient(to right, #3b5998, #1877f2);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.5rem;
+  fill: currentColor;
+}
+
+.label {
+  position: absolute;
+  opacity: 0;
+  color: #ffffff;
+  transition: all 0.7s;
+}
+
+.fb_icon_button:hover .label {
+  opacity: 1;
+  color: #aaaaaa;
+  transform: translateY(-2.9rem);
+}
+
+/* behance icon css */
+.behance_icon_button{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #0056ff, #053eff);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.behance_icon_button:hover {
+  transform: translateY(3px);
+  border-radius: 50%;
+  background: linear-gradient(to right, #053eff, #0056ff);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.5rem;
+  fill: currentColor;
+}
+
+.label {
+  position: absolute;
+  opacity: 0;
+  color: #ffffff;
+  transition: all 0.7s;
+}
+
+.behance_icon_button:hover .label {
+  opacity: 1;
+  color: #aaaaaa;
+  /* font-size: 0.875rem; */
+
+  transform: translateY(-2.9rem);
+  
+}
+
+.icon_name{
+  font-family: 'Clash Display', sans-serif;
+  font-weight: var(--font-weight-normal);
+  font-size: 1.2rem;
+}
+
+/* <!-- ********************footer section End******************** --> */

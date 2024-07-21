@@ -98,3 +98,23 @@ window.addEventListener("mousemove",function (e) {
 
 });
 
+
+// adding scroll arrow 
+const scrollarrow = document.querySelector('.scroll_arrow')
+
+window.addEventListener('scroll', () => {
+//   console.log(window.pageYOffset)
+  if (window.pageYOffset > 224){
+    scrollarrow.style.display = "block";
+  }
+  else{
+    scrollarrow.style.display = "none";
+  }
+})
+
+scrollarrow.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior:"smooth"
+    })
+})

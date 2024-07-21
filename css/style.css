@@ -1265,6 +1265,8 @@ header {
 }
 
 .logos {
+  z-index: 1;
+  position: relative;
   overflow: hidden;
   padding: 30px 0;
   background: black;
@@ -1289,6 +1291,53 @@ header {
 /* <!-- ********************footer section start******************** --> */
 
 
+footer{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-b-color);
+}
+
+.footer_section{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer_section::before {
+  content: '';
+  position: absolute;
+  background: radial-gradient(var(--secondary-color), transparent, transparent);
+  width: 2200px;
+  height: 2200px;
+  transform: translate(-15%, -55%);
+  opacity: .2;
+  filter: blur(10);
+} 
+
+
+.footer_main_section{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer_main_section p{
+  color: var(--text-w-color);
+  font-size: 2.5rem;
+  margin-top: 8rem;
+  text-align: center;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: var(--font-weight-bold);
+}
+
+.footer_main_section span{
+  color: var(--secondary-color);
+}
+
+
 .footer_btn_button {
   cursor: pointer;
   padding: 1em 1.8em;
@@ -1297,10 +1346,11 @@ header {
   font-size: 1em;
   color: white;
   background-color: #222222;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .footer_btn_button:hover {
+  cursor: pointer;
   transform: scale(1.15);
   border: none;
   background: linear-gradient(
@@ -1314,37 +1364,6 @@ header {
   transform: scale(0.95);
 }
 
-footer{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--text-b-color);
-}
-
-.footer_section{
-  width: 100%;
-}
-
-.footer_main_section{
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.footer_main_section p{
-  color: var(--text-w-color);
-  font-size: 2.5rem;
-  margin-top: 10rem;
-  text-align: center;
-  font-family: 'Clash Display', sans-serif;
-  font-weight: var(--font-weight-medium);
-}
-
-.footer_main_section span{
-  color: var(--secondary-color);
-}
 
 .footer_button_section{
   display: flex;
@@ -1361,8 +1380,8 @@ footer{
 }
 
 .footer_logo_email .footer_logo{
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 .footer_logo_email .footer_logo img{
@@ -1637,3 +1656,26 @@ footer{
 }
 
 /* <!-- ********************footer section End******************** --> */
+
+
+/* scroll arrow css  */
+
+.scroll_arrow{
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  bottom: 5rem;
+  right: 3rem;
+  font-size: 2.5rem;
+  color: var(--text-w-color);
+  font-family: 'Clash Display', sans-serif;
+  font-weight: var(--font-weight-light);
+  display: none;
+  transition: all .3s ease-in;
+  z-index: 999999999;
+}
+.scroll_arrow:hover{
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.2);
+  backdrop-filter: blur(100px);
+}

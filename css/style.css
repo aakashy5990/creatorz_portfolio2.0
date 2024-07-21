@@ -1277,9 +1277,9 @@ header {
 }
 
 .logos-slide img {
-  width: 150px;
+  /* width: 150px; */
   height: 150px;
-  margin: 0 60px;
+  margin: 0 40px;
 }
 
 

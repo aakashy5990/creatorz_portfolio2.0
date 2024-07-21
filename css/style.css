@@ -108,7 +108,7 @@ header {
 
 .intro_section {
   min-height: 100vh;
-  background: url('../img/main_banenr.png') no-repeat;
+  background: url('../img/main_banenr1.png') no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -849,53 +849,86 @@ header {
 
 /* ***********Start middle text & box slider ********** */
 
-.box_text_slider_main{
+.box_text_slider_main {
   background-color: var(--text-b-color);
-}
-
-.first_slider,
-.second_slider,
-.third_slider {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
 }
 
 .slider {
-  margin: auto;
   overflow: hidden;
-  position: relative;
-  width: 100%;
-  transition: width 0.5s ease, height 0.5s ease;
-}
-
-.slider .slide-track {
-  animation: scroll 8s linear infinite reverse;
   display: flex;
-  width: calc(350px * 18);
-  /* Adjust this based on the number of slides */
+  background: black;
+  white-space: nowrap;
 }
 
-.slider .slide-track:hover {
-  animation-play-state: paused;
-}
-
-.slider .second-slide-track {
-  animation: scroll 80s linear infinite;
+.slide-track {
   display: flex;
-  width: calc(350px * 18);
-  /* Adjust this based on the number of slides */
+  animation: 30s slide infinite linear reverse;
 }
 
-.slider .second-slide-track:hover {
-  animation-play-state: paused;
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .slide {
+  /* width: 410px;
+  height: 250px; */
   width: 350px;
   height: 210px;
-  background-color: white;
   margin: 1rem;
-  transition: width 0.5s ease, height 0.5s ease;
 }
+
+.slide img{
+  width: 100%;  
+}
+
+/* .slide:nth-child(1) {
+  background-color: red;
+}
+
+.slide:nth-child(2) {
+  background-color: blue;
+}
+
+.slide:nth-child(3) {
+  background-color: green;
+}
+
+.slide:nth-child(4) {
+  background-color: yellow;
+}
+
+.slide:nth-child(5) {
+  background-color: purple;
+}
+
+.slide:nth-child(6) {
+  background-color: orange;
+}
+
+.slide:nth-child(7) {
+  background-color: pink;
+}
+
+.slide:nth-child(8) {
+  background-color: teal;
+}
+
+.slide:nth-child(9) {
+  background-color: brown;
+}
+
+.slide:nth-child(10) {
+  background-color: gray;
+} */
 
 @keyframes scroll {
   0% {
@@ -903,8 +936,7 @@ header {
   }
 
   100% {
-    transform: translateX(calc(-350px * 9));
-    /* Adjust this based on the number of slides */
+    transform: translateX(calc(-350px * 19 - 10rem));
   }
 }
 
@@ -921,7 +953,6 @@ header {
   margin: auto auto;
   white-space: nowrap;
   overflow: hidden;
-
 }
 
 .marquee span {
@@ -929,7 +960,7 @@ header {
   padding-left: 100%;
   text-align: center;
   color: rgb(204 42 249);
-  font-family: 'Clash Display', sans-serif;
+  font-family: "Clash Display", sans-serif;
   font-weight: var(--font-weight-semibold);
   white-space: nowrap;
   line-height: 140px;
@@ -1094,6 +1125,8 @@ header {
 /* <!-- ****************** start news section****************** --> */
 
 
+/* new btn css code  */
+/* 
 .news_button_main_container {
   display: flex;
 }
@@ -1165,7 +1198,9 @@ header {
 
 .news_btn_container:active::before {
   filter: blur(0.2em);
-}
+} */
+/* new btn css code end */
+
 
 
 .news_section {
@@ -1174,7 +1209,7 @@ header {
 
 .new_section_container {
   min-height: 100vh;
-  background: url(../img/main_banenr.png) no-repeat;
+  background: url(../img/lion_replacement.png) no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -1195,23 +1230,56 @@ header {
 
 .new_section_container p:nth-child(1) {
   font-size: 4.5rem;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   word-spacing: 2px;
+  letter-spacing: 2px;
 }
 
 .new_section_container p:nth-child(2) {
   font-size: 1.4rem;
   font-family: 'Clash Display', sans-serif;
   font-weight: var(--font-weight-light);
-  word-spacing: 1px;
+  word-spacing: 2px;
   letter-spacing: 1px;
+  line-height: 35px;
 }
 
 .new_section_main_container {
   max-width: 650px;
   display: grid;
   row-gap: 1rem;
-  margin-top: 15rem;
 }
 
 /* <!-- ******************End start news section****************** --> */
+
+/* <!-- ******************logo slider section Start ******************* --> */
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 30px 0;
+  background: black;
+  white-space: nowrap;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 30s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 150px;
+  margin: 0 60px;
+}
+
+
+/* <!-- ******************logo slider section ENd ******************* --> */

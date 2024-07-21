@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+        }
+        .box_text_slider_main {
+            background-color: var(--text-b-color);
+            display: flex;
+            flex-direction: column;
+            /* margin: 40px 0; */
+        }
+        .slider {
+            overflow: hidden;
+            display: flex;
+            background: black;
+            white-space: nowrap;
+        }
+        .slide-track {
+            display: flex;
+            animation: 20s slide infinite linear;
+        }
+        @keyframes slide {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+        .slide {
+            width: 410px;
+            height: 250px;
+            /* width: 350px;
+            height: 210px; */
+            margin: 1rem;
+        }
+        .slide:nth-child(1) { background-color: red; }
+        .slide:nth-child(2) { background-color: blue; }
+        .slide:nth-child(3) { background-color: green; }
+        .slide:nth-child(4) { background-color: yellow; }
+        .slide:nth-child(5) { background-color: purple; }
+        .slide:nth-child(6) { background-color: orange; }
+        .slide:nth-child(7) { background-color: pink; }
+        .slide:nth-child(8) { background-color: teal; }
+        .slide:nth-child(9) { background-color: brown; }
+        .slide:nth-child(10) { background-color: gray; }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-410px * 10 - 10rem));
+            }
+        }
+        .marquee-w {
+            position: relative;
+            display: block;
+            height: 140px;
+            overflow: hidden;
+        }
+        .marquee {
+            position: absolute;
+            display: block;
+            margin: auto auto;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            text-align: center;
+            color: rgb(204 42 249);
+            font-family: "Clash Display", sans-serif;
+            font-weight: var(--font-weight-semibold);
+            white-space: nowrap;
+            line-height: 140px;
+            font-size: 8rem;
+            animation: marquee 20s linear infinite;
+        }
+        .marquee2 span {
+            animation-delay: 10s;
+        }
+        @keyframes marquee {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(-100%, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box_text_slider_main">
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+            <!-- repeated for loop  -->
+            <div class="slide-track">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+        </div>
+
+        <div class="marquee-w">
+            <div class="marquee">
+                <span>Quality is worth the time. Quality is worth the time.&nbsp;&nbsp;</span>
+            </div>
+            <div class="marquee marquee2">
+                <span>Quality is worth the time. Quality is worth the time.&nbsp;&nbsp;</span>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+            <!-- repeated for loop  -->
+            <div class="slide-track">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

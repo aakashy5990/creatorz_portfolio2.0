@@ -1322,12 +1322,12 @@ footer{
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  margin-top: 4rem;
 }
 
 .footer_main_section p{
   color: var(--text-w-color);
   font-size: 2.5rem;
-  margin-top: 8rem;
   text-align: center;
   font-family: 'Clash Display', sans-serif;
   font-weight: var(--font-weight-bold);
@@ -1349,6 +1349,7 @@ footer{
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
+
 .footer_btn_button:hover {
   cursor: pointer;
   transform: scale(1.15);
@@ -1366,7 +1367,9 @@ footer{
 
 
 .footer_button_section{
+  position: relative;
   display: flex;
+  z-index: 1;
   justify-content: center;
   margin-top: 2rem;
 }

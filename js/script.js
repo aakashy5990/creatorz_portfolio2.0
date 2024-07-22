@@ -94,7 +94,7 @@ window.addEventListener("mousemove",function (e) {
     cursorOutline.animate({
         left: `${posX}px`,
         top:`${posY}px`
-    },{ duration:1000, fill:"forwards"});
+    },{ duration:900, fill:"forwards"});
 
 });
 

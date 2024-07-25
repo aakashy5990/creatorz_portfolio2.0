@@ -13,8 +13,8 @@
   --font-weight-regular: normal;
 
 
-  --font-size-large: 1.4em;
-  --padding-standard: 0.6em 0.8em;
+  --padding-left-main: 100px;
+  --padding-standard: 0 100px;
 }
 
 @font-face {
@@ -93,6 +93,13 @@
 }
 
 /* ************end cursor ********** */
+
+
+/* mobile start nav  */
+
+
+
+/* mobile end nav  */
 
 
 body {
@@ -339,7 +346,7 @@ header {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding-left: 100px;
+  padding-left: var(--padding-left-main);
 }
 
 .intro_content_main {
@@ -760,7 +767,7 @@ header {
 .service_container {
   width: 100%;
   height: 100vh;
-  padding: 0 100px;
+  padding: var(--padding-standard);
   display: flex;
   align-items: center;
   position: relative;
@@ -869,8 +876,8 @@ header {
   margin: 1rem;
 }
 
-.slide img{
-  width: 100%;  
+.slide img {
+  width: 100%;
 }
 
 /* .slide:nth-child(1) {
@@ -1206,7 +1213,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding-left: 100px;
+  padding-left: var(--padding-left-main);
 
 }
 
@@ -1246,6 +1253,7 @@ header {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -1278,7 +1286,7 @@ header {
 /* <!-- ********************footer section start******************** --> */
 
 
-footer{
+footer {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1286,7 +1294,7 @@ footer{
   background-color: var(--text-b-color);
 }
 
-.footer_section{
+.footer_section {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -1302,17 +1310,17 @@ footer{
   transform: translate(-15%, -55%);
   opacity: .2;
   filter: blur(10);
-} 
+}
 
 
-.footer_main_section{
+.footer_main_section {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
   margin-top: 4rem;
 }
 
-.footer_main_section p{
+.footer_main_section p {
   color: var(--text-w-color);
   font-size: 2.5rem;
   text-align: center;
@@ -1320,7 +1328,7 @@ footer{
   font-weight: var(--font-weight-bold);
 }
 
-.footer_main_section span{
+.footer_main_section span {
   color: var(--secondary-color);
 }
 
@@ -1341,11 +1349,9 @@ footer{
   cursor: pointer;
   transform: scale(1.15);
   border: none;
-  background: linear-gradient(
-    -80deg,
-    rgba(150, 93, 233, 1) 10%,
-    rgba(99, 88, 238, 1) 95%
-  );
+  background: linear-gradient(-80deg,
+      rgba(150, 93, 233, 1) 10%,
+      rgba(99, 88, 238, 1) 95%);
 }
 
 .footer_btn_button:active {
@@ -1353,7 +1359,7 @@ footer{
 }
 
 
-.footer_button_section{
+.footer_button_section {
   position: relative;
   display: flex;
   z-index: 1;
@@ -1361,45 +1367,45 @@ footer{
   margin-top: 2rem;
 }
 
-.footer_logo_email{
+.footer_logo_email {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  padding: 0 100px;
+  padding: var(--padding-standard);
 }
 
-.footer_logo_email .footer_logo{
+.footer_logo_email .footer_logo {
   width: 250px;
   height: 250px;
 }
 
-.footer_logo_email .footer_logo img{
+.footer_logo_email .footer_logo img {
   width: 100%;
 }
 
-.footer_email{
+.footer_email {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.footer_logo_email .footer_email p{
+.footer_logo_email .footer_email p {
   color: var(--text-w-color);
   font-family: 'Clash Display', sans-serif;
 
 }
 
-.footer_logo_email .footer_email p:first-child{
+.footer_logo_email .footer_email p:first-child {
   letter-spacing: 1px;
 }
 
-.footer_logo_email .footer_email p:last-child{
+.footer_logo_email .footer_email p:last-child {
   letter-spacing: 1px;
 }
 
-.footer_social_main_icons{
+.footer_social_main_icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1420,7 +1426,7 @@ footer{
   align-items: center;
 }
 
-.insta_icon_button{
+.insta_icon_button {
   width: 50px;
   height: 50px;
   position: relative;
@@ -1438,7 +1444,7 @@ footer{
   transition: all 0.5s;
 }
 
-.insta_icon_button:hover{
+.insta_icon_button:hover {
   transform: translateY(3px);
   border-radius: 50%;
   background: linear-gradient(to right, #bc1888, #cc2366, #dc2743, #e6683c, #f09433);
@@ -1465,7 +1471,7 @@ footer{
 
 /* youtube icon css  */
 
-.yt_icon_button{
+.yt_icon_button {
   width: 50px;
   height: 50px;
   position: relative;
@@ -1508,7 +1514,7 @@ footer{
 }
 
 /* linkdin icon css  */
-.linkdin_icon_button{
+.linkdin_icon_button {
   width: 50px;
   height: 50px;
   position: relative;
@@ -1551,7 +1557,7 @@ footer{
 }
 
 /* facebook icon css  */
-.fb_icon_button{
+.fb_icon_button {
   width: 50px;
   height: 50px;
   position: relative;
@@ -1594,7 +1600,7 @@ footer{
 }
 
 /* behance icon css */
-.behance_icon_button{
+.behance_icon_button {
   width: 50px;
   height: 50px;
   position: relative;
@@ -1636,10 +1642,10 @@ footer{
   /* font-size: 0.875rem; */
 
   transform: translateY(-2.9rem);
-  
+
 }
 
-.icon_name{
+.icon_name {
   font-family: 'Clash Display', sans-serif;
   font-weight: var(--font-weight-normal);
   font-size: 1.2rem;
@@ -1650,7 +1656,7 @@ footer{
 
 /* scroll arrow css  */
 
-.scroll_arrow{
+.scroll_arrow {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   position: fixed;
@@ -1664,7 +1670,8 @@ footer{
   transition: all .3s ease-in;
   z-index: 999999999;
 }
-.scroll_arrow:hover{
+
+.scroll_arrow:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.2);
   backdrop-filter: blur(100px);

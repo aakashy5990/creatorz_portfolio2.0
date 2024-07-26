@@ -117,13 +117,10 @@ header {
   min-height: 100vh;
   background: url('../img/main_banenr1.png') no-repeat;
   background-size: cover;
-  /* background-position: center; */
   background-position: 65%;
   position: fixed;
   width: 100%;
   position: relative;
-  /* height: 100vh; */
-  /* background-size: 100% 100vh; */
   overflow-y: hidden;
 }
 
@@ -399,6 +396,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 3rem;
+}
+.intro_pro-content_main,.intro_client_content_main{
+  width: 100%;
 }
 
 .intro_pro_client_content p {

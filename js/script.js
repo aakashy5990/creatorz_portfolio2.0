@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Function to update line width based on count
     function updateLineWidth(lineElement, count, maxCount) {
-        const maxWidth = 150; // Maximum width for the line (adjusted to 150px)
+        const maxWidth = 100; // Maximum width for the line (adjusted to 150px)
         const incrementStep = maxWidth / maxCount;
         
         // Calculate the new width
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const finalWidth = Math.min(newWidth, maxWidth);
         
         // Apply the new width to the line element
-        lineElement.style.width = finalWidth + 'px';
+        lineElement.style.width = finalWidth + '%';
     }
     
     // Call incrementCounts function initially

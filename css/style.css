@@ -584,8 +584,7 @@ header {
 }
 
 .sec_container {
-  margin: 0 auto;
-  max-width: 550px;
+  padding: var(--padding-standard);
 }
 
 /* ****************** service page start *************** */
@@ -647,7 +646,7 @@ header {
   display: inline-grid;
   place-content: center;
   /* padding: 0.5em 1.5em; */
-  padding: 2em 3.5em;
+  padding: 2em 3em;
   font-family: 'Clash Display', sans-serif;
   font-weight: var(--font-weight-normal);
   font-size: 17px;
@@ -770,6 +769,7 @@ header {
 .service_container {
   width: 100%;
   height: 100vh;
+  margin: 5rem 0;
   padding: var(--padding-standard);
   display: flex;
   align-items: center;
@@ -814,16 +814,11 @@ header {
 }
 
 .services_box_container {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.services_box_container .serivce_multi_btn {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 
@@ -846,7 +841,7 @@ header {
   background-color: var(--text-b-color);
   display: flex;
   flex-direction: column;
-  padding: 40px 0;
+  padding:var(--padding-standard);
 }
 
 .slider {

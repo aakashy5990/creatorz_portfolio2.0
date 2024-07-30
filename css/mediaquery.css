@@ -363,6 +363,28 @@
         }
     }
 
+    /* we get shit done section css  */
+    .new_section_container {
+        padding-left: var(--padding-left-medium);
+    }
+
+    .new_section_container p:nth-child(1) {
+        font-size: 4rem;
+    }
+
+    .new_section_container p:nth-child(2) {
+        font-size: 1.4rem;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+        line-height: 32px;
+    }
+    
+    .new_section_main_container {
+        max-width: 600px;
+        row-gap: .9rem;
+        margin-right: 10rem;
+    }
+
 }
 
 @media screen and (max-width: 700px){
@@ -407,6 +429,28 @@
         line-height: 122px;
     }
 
+    /* we get shit section  */
+    .new_section_container p:nth-child(1) {
+        font-size: 3rem;
+    }
+
+    .new_section_container p:nth-child(2) {
+        font-size: 1.3rem;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+
+    .new_section_main_container {
+        row-gap: .8rem;
+        margin-right: 6rem;
+    }
+
+    /* logo slider section  */
+    .logos-slide img {
+        margin: 0 0px;
+    }
+
 } 
 
 @media screen and (max-width: 600px) {
@@ -441,6 +485,20 @@
         padding: var(--padding-standard-normal);
     }
 
+    /* we get sit section  */
+
+    .new_section_container {
+        padding-left: var(--padding-left-normal);
+    }
+
+    .new_section_main_container {
+        margin-right: 4rem;
+    }
+
+    /* logo slider section  */
+    .logos-slide img {
+        height: 130px;
+    }
 
 
 }
@@ -569,6 +627,32 @@
         width: 35px;
         height: 35px;
     }
+
+    /* we get shit done section  */
+    .new_section_container {
+        padding-left: var(--padding-left-small);
+    }
+
+    .new_section_main_container {
+        margin-right: 7.5rem;
+    }
+
+    .new_section_container p:nth-child(1) {
+        font-size: 2.5rem;
+        font-weight: var(--font-weight-semibold);
+    }
+
+    .new_section_container p:nth-child(2) {
+        font-size: 1.1rem;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+        line-height: 28px;
+    }
+
+    /* logo slider section  */
+    .logos-slide img {
+        height: 90px;
+    }
     
 }
 
@@ -639,6 +723,11 @@
         gap: 1rem;
     }
 
+    /* we get shit done section  */
+    .new_section_container {
+        padding-left: var(--padding-left-little-small);
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -696,6 +785,14 @@
     .swiper_client_img img {
         width: 30px;
         height: 30px;
+    }
+    .new_section_main_container {
+        margin-right: 3rem;
+    }
+
+    /* logo slider section  */
+    .logos-slide img {
+        height: 80px;
     }
 
 }

@@ -1080,85 +1080,6 @@ header {
 
 /* <!-- ****************** start news section****************** --> */
 
-
-/* new btn css code  */
-/* 
-.news_button_main_container {
-  display: flex;
-}
-
-.news_button_container {
-  display: inline-block;
-}
-
-.news_btn_button {
-  font-size: 1em;
-  padding: 0.4em 0.8em;
-  border: none;
-  background-color: #000;
-  color: #fff;
-  cursor: pointer;
-  box-shadow: 2px 2px 3px #000000b4;
-}
-
-
-.news_btn_container {
-  position: relative;
-  font-size: 1.4rem;
-  padding: 0.6em 0.8em;
-  border: none;
-  background-color: var(--text-b-color);
-  color: var(--text-w-color);
-  font-family: 'Clash Display', sans-serif;
-  font-weight: var(--font-weight-light);
-  text-transform: uppercase;
-  cursor: pointer;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
-  z-index: 1;
-  width: 100%;
-}
-
-
-.news_btn_container {
-  position: relative;
-  padding: 3px;
-  background: linear-gradient(90deg, #03a9f4, #f441a5);
-  transition: all 0.4s ease;
-  z-index: 0;
-}
-
-.news_btn_button {
-  font-family: 'Clash Display', sans-serif;
-  font-weight: var(--font-weight-normal);
-}
-
-
-.news_btn_container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  filter: blur(0);
-  background: inherit;
-  transition: filter 0.4s ease;
-}
-
-
-.news_btn_container:hover::before {
-  filter: blur(1.2em);
-  backdrop-filter: blur(1.2rem);
-}
-
-.news_btn_container:active::before {
-  filter: blur(0.2em);
-} */
-/* new btn css code end */
-
-
-
 .news_section {
   width: 100%;
 }
@@ -1167,7 +1088,8 @@ header {
   min-height: 100vh;
   background: url(../img/lion_replacement.png) no-repeat;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
+  background-position: 63%;
   width: 100%;
   position: relative;
   overflow-y: hidden;

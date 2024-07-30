@@ -1180,7 +1180,6 @@ footer {
 
 .footer_section {
   width: 100%;
-  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -1195,7 +1194,6 @@ footer {
   opacity: .2;
   filter: blur(10);
 }
-
 
 .footer_main_section {
   width: 100%;

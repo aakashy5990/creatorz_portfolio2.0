@@ -385,6 +385,25 @@
         margin-right: 10rem;
     }
 
+    /* footer section  */
+    .footer_main_section p {
+        font-size: 2.2rem;
+    }
+
+    .footer_btn_button {
+        padding: .8em 1.6em;
+        font-size: .9em;
+    }
+
+    .footer_logo_email .footer_logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .footer_logo_email {
+        padding: var(--padding-standard-small);
+    }
+
 }
 
 @media screen and (max-width: 700px){
@@ -451,6 +470,10 @@
         margin: 0 0px;
     }
 
+    .footer_logo_email {
+        padding: var(--padding-standard-medium);
+    }
+
 } 
 
 @media screen and (max-width: 600px) {
@@ -500,7 +523,28 @@
         height: 130px;
     }
 
+    .footer_logo_email {
+        padding: var(--padding-standard-normal);
+    }
 
+    .footer_logo_email {
+        flex-direction: column;
+        align-items: start;
+        column-gap: 1rem;
+        margin: 2rem 0;
+    }
+
+    .footer_email {
+        align-items: start;
+    }
+
+    .footer_main_section {
+        padding: var(--padding-standard-normal);
+    }
+
+    .footer_main_section p {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -653,6 +697,28 @@
     .logos-slide img {
         height: 90px;
     }
+
+    .footer_logo_email {
+        padding: var(--padding-standard-small);
+    }
+
+    .footer_main_section p {
+        font-size: 1.5rem;
+    }
+
+    .fb_icon_button,
+    .insta_icon_button,
+    .yt_icon_button,
+    .linkdin_icon_button,
+    .behance_icon_button{
+        width: 40px;
+        height: 40px;
+        padding: .9em;
+    }
+
+    .footer_social_main_icons {
+        column-gap: 1rem;
+    }
     
 }
 
@@ -728,6 +794,10 @@
         padding-left: var(--padding-left-little-small);
     }
 
+    .footer_logo_email {
+        padding: var(--padding-standard-little-small);
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -793,6 +863,20 @@
     /* logo slider section  */
     .logos-slide img {
         height: 80px;
+    }
+
+    /* footer section  */
+    .footer_main_section p {
+        font-size: 1.2rem;
+    }
+
+    .fb_icon_button,
+    .insta_icon_button,
+    .yt_icon_button,
+    .linkdin_icon_button,
+    .behance_icon_button{
+        width: 45px;
+        height: 45px;
     }
 
 }

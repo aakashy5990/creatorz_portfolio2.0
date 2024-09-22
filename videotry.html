@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #f2f2f2;
+      }
+
+      .popup-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+      }
+      .popup-container.active {
+        opacity: 1;
+        pointer-events: auto;
+        transition: 0.4s ease;
+      }
+      .popup-container .popup-box {
+        width: 500px;
+        height: 500px;
+        background: #f2f2f2;
+        border-radius: 6px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transform: scale(0);
+      }
+      .popup-container.active .popup-box {
+        transform: scale(1);
+        transition: 0.4s ease;
+        transition-delay: 0.25s;
+      }
+      .popup-box h1 {
+        color: #333;
+        line-height: 1;
+      }
+      .popup-box p {
+        color: #333;
+        margin: 12px 0 20px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        width: 300px;
+        height: 300px;
+      }
+      img {
+        width: 100%;
+      }
+      i {
+        color: red;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 3rem 3rem 0 0;
+        z-index: 1;
+    }
+      
+    </style>
+  </head>
+  <body>
+    
+
+    <div class="container show-popup">
+        <img src="service_img/logo_design/1.jpg" alt="" />
+    </div>
+
+    <div class="popup-container">
+        <i class="ri-close-line close-btn"></i>
+        <div class="popup-box">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FewWUHxY79w?si=Ys1d3WZRXeEVFmXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+      const showPopup = document.querySelector(".show-popup");
+      const popupContainer = document.querySelector(".popup-container");
+      const closeBtn = document.querySelector(".close-btn");
+      showPopup.onclick = () => {
+        popupContainer.classList.add("active");
+      };
+      closeBtn.onclick = () => {
+        popupContainer.classList.remove("active");
+      };
+    </script>
+  </body>
+</html>
